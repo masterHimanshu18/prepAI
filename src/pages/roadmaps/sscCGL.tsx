@@ -6,6 +6,8 @@ import { NotificationsList } from "../../components/NotificationsList";
 import { sscCglNotifications } from "../../data/sscCglNotifications";
 import { Roadmap } from "../../components/Roadmap";
 import { allRoadmaps } from "../../data/allRoadmaps";
+import { TestSeries } from "../../components/TestSeries";
+import { sscCGLTestPatterns } from "../../data/sscCGLTestInfo";
 import sscLogo from '../../assets/examsLogo/ssc_logo.png';
 
 
@@ -34,7 +36,7 @@ const SSC_CGL: React.FC = () => {
       ) : (
         <div className="p-6 text-center text-gray-600">
           {/* your Test Series UI goes here */}
-          Test Series Content for SSC CGL
+          <TestSeries patterns={sscCGLTestPatterns} />
         </div>
       )}
     </div>
