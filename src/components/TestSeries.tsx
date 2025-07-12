@@ -26,7 +26,22 @@ export const TestSeries: React.FC<TestSeriesProps> = ({ patterns }) => {
 
   const startTest = (testId: string) => {
     const url = `/tests/runner?testId=${encodeURIComponent(testId)}`;
-    window.open(url, '_blank', 'fullscreen=yes');
+    window.open(
+      url,
+      '_blank',
+      `
+        toolbar=0,
+        location=0,
+        status=0,
+        menubar=0,
+        scrollbars=0,
+        resizable=0,
+        top=0,
+        left=0,
+        width=${window.screen.availWidth},
+        height=${window.screen.availHeight}
+      `.replace(/\s+/g, '')
+    );
   };
 
   const instructionsFor = (test: Test): string[] => [

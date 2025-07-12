@@ -29,7 +29,7 @@ const SSC_CGL: React.FC = () => {
       {activeTab === 'notifications' ? (
           <NotificationsList
             title="SSC CGL Notifications"
-            notifications={sscCglNotifications}
+            notifications = {sscCglNotifications}
           />
       ) : activeTab === 'roadmap' ? (
           <Roadmap patterns={allRoadmaps} />
