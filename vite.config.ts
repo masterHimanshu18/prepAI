@@ -5,7 +5,7 @@ import tailwindcss from "tailwindcss";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/prepAI',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
