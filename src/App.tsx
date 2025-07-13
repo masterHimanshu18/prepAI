@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
 import TopicPage from './pages/subtopics/TopicPage';
@@ -11,7 +11,7 @@ import NotFound from './pages/pageNotFound';
 
 function App() {
   return (
-    <Router basename="/prepAI">
+    <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           {/* Subtopic content/quizzes route */}
