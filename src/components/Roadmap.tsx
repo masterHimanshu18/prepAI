@@ -1,7 +1,6 @@
 // src/components/Roadmap.tsx
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import type { ExamSectionInfo, TopicWeight } from "../data/sscCglRoadmapInfo";
 
 interface PatternData {
@@ -15,7 +14,6 @@ interface RoadmapProps {
 }
 
 export const Roadmap: React.FC<RoadmapProps> = ({ patterns }) => {
-  const navigate = useNavigate();
   const [activePattern, setActivePattern] = useState(0);
   const [selectedTopic, setSelectedTopic] = useState<TopicWeight | null>(
     patterns[0]?.weightage[0] || null

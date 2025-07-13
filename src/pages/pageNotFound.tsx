@@ -14,7 +14,6 @@ const stars = Array.from({ length: NUM_STARS }).map((_, i) => ({
 
 // Generate spiral coordinates for the astronaut's path
 const SPIRAL_POINTS = 90; // More points = smoother spiral
-const spiralRadius = 220;
 const spiral = Array.from({ length: SPIRAL_POINTS }).map((_, i) => {
   // Fibonacci spiral: r = a*e^(b*theta)
   // We'll use an Archimedean spiral for simplicity: r = a + b*theta

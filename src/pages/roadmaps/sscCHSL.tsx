@@ -4,9 +4,9 @@ import ExamHeaderCard from '../../components/common/ExamHeaderCard';
 import sscLogo from '../../assets/examsLogo/ssc_logo.png';
 
 const SSC_CHSL = () => {
-  const [activeTab, setActiveTab] = useState<'roadmap' | 'tests'>('roadmap');
+  const [activeTab, setActiveTab] = useState<'notifications' | 'roadmap' | 'tests'>('roadmap');
 
-  const handleTabChange = (tab: 'roadmap' | 'tests') => {
+  const handleTabChange = (tab: 'notifications' | 'roadmap' | 'tests') => {
     setActiveTab(tab);
   };
 
@@ -25,8 +25,10 @@ const SSC_CHSL = () => {
       <div className="mt-6">
         {activeTab === 'roadmap' ? (
           <div>Roadmap Content for SSC CHSL</div>
-        ) : (
+        ) : activeTab === 'tests' ? (
           <div>Test Series Content for SSC CHSL</div>
+        ) : (
+          <div>Notifications Content for SSC CHSL</div>
         )}
       </div>
     </div>

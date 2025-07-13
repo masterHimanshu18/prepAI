@@ -4,7 +4,7 @@ import { motion, AnimatePresence, HTMLMotionProps } from "framer-motion";
 import { Info, CheckCircle, AlertTriangle } from "lucide-react";
 
 type NotificationItem = {
-  id: string;
+  id: string | number;
   title: string;
   date: string;
   link: string;

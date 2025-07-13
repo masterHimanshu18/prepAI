@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import StartTestModal from './common/StartTestModal';
-import { useNavigate } from 'react-router-dom';
 import type { PatternData, Category, Test } from '../data/sscCGLTestInfo';
 
 interface TestSeriesProps {
@@ -10,7 +9,6 @@ interface TestSeriesProps {
 }
 
 export const TestSeries: React.FC<TestSeriesProps> = ({ patterns }) => {
-  const navigate = useNavigate();
   const [activePattern, setActivePattern] = useState(0);
   const [activeCategory, setActiveCategory] = useState(0);
   const [showModal, setShowModal] = useState(false);

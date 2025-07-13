@@ -17,7 +17,7 @@ interface AnswerMap {
     reviewed: Set<string | number>;
     visited: Set<string | number>;
   }
-  const SummaryTable: React.FC<SummaryProps> = ({ sections, answers, reviewed, visited }) => {
+  const SummaryTable: React.FC<SummaryProps> = ({ sections, answers, reviewed }) => {
     const rows = sections.map(sec => {
       let answered = 0, revAns = 0, revNoAns = 0, notAns = 0;
       sec.questions.forEach(q => {

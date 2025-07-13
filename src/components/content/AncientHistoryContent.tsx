@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import * as Accordion from "@radix-ui/react-accordion";
-import { MapPin, Home, Crop, ShoppingCart, Palette, BookOpen, Crosshair, ChevronDown } from "lucide-react";
+import { MapPin, Home, Crop, ShoppingCart, Palette, Crosshair, ChevronDown } from "lucide-react";
 
 export const AncientHistoryContent: React.FC = () => {
   const [activeAccordion, setActiveAccordion] = useState<string[]>([]);
