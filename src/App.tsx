@@ -1,4 +1,5 @@
 // src/App.tsx
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
@@ -10,23 +11,29 @@ import NotFound from './pages/pageNotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/prepAI">
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          {/* Add your routes here */}
-          {/* Subtopic content/quizzes route */}  
+          {/* Subtopic content/quizzes route */}
           <Route path="topic/:chapter" element={<TopicPage />} />
+
+          {/* Home route */}
           <Route index element={<Home />} />
-          <Route path="/about" element={<div>About Page</div>} />
-          {/* Dynamic exam roadmap route */}
+
+          {/* Static pages */}
+          <Route path="about" element={<div>About Page</div>} />
+
+          {/* Dynamic exam roadmap */}
           <Route path="roadmaps/:examSlug" element={<ExamRoadmap />} />
+
           {/* Test runner page */}
-          <Route path="/tests/runner" element={<TestRunner />} />
+          <Route path="tests/runner" element={<TestRunner />} />
+
           {/* Test analysis page */}
-          <Route path="/tests/analysis" element={<TestAnalysis />} />
-          {/* Add more routes as needed */}
+          <Route path="tests/analysis" element={<TestAnalysis />} />
         </Route>
-        {/* Fallback for unknown routes - OUTSIDE MainLayout */}
+
+        {/* Catch‑all fallback for unknown routes */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
