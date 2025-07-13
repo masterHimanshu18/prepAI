@@ -7,166 +7,166 @@ export type Question = {
   explanation: string;
 };
 
-export const reasoningQuestions: Question[] =
+export const reasoningQuestionsT1Full02: Question[] =
 [
   {
-    "id": 'CGL_T1_FT1_RS_1',
+    "id": 'CGL_T1_FT2_RS_1',
     "question": "Which of the following is the odd one out?",
     "options": [
-      "Apple",
-      "Banana",
-      "Grapes",
-      "Potato"
+      "Dog",
+      "Cat",
+      "Cow",
+      "Car"
     ],
     "answer": 3,
-    "solution": "Potato",
-    "explanation": "Potato is a vegetable, the rest are fruits."
+    "solution": "Car",
+    "explanation": "Car is not an animal; the rest are."
   },
   {
-    "id": 'CGL_T1_FT1_RS_2',
-    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "id": 'CGL_T1_FT2_RS_2',
+    "question": "If in a code, FLOWER is written as GNPXFS, how is GARDEN written?",
     "options": [
-      "EPH",
-      "EPI",
-      "DPH",
-      "EOG"
+      "HBSFEP",
+      "HBSFGO",
+      "HBSFEO",
+      "HBSFEN"
     ],
     "answer": 0,
-    "solution": "EPH",
+    "solution": "HBSFEP",
     "explanation": "Each letter is replaced by its next letter in the alphabet."
   },
   {
-    "id": 'CGL_T1_FT1_RS_3',
-    "question": "Find the missing number: 2, 6, 12, 20, ?, 42",
+    "id": 'CGL_T1_FT2_RS_3',
+    "question": "Find the missing number: 4, 9, 16, 25, ?, 49",
     "options": [
-      "28",
-      "30",
+      "36",
       "32",
-      "34"
+      "40",
+      "45"
     ],
     "answer": 0,
-    "solution": "28",
-    "explanation": "Pattern: n^2 + n (n=1,2,3...)"
+    "solution": "36",
+    "explanation": "These are squares of consecutive natural numbers."
   },
   {
-    "id": 'CGL_T1_FT1_RS_4',
-    "question": "A is the brother of B. B is the sister of C. C is the son of D. How is D related to A?",
+    "id": 'CGL_T1_FT2_RS_4',
+    "question": "Pointing to a girl, Rohan said, 'She is the daughter of my mother's only son.' How is the girl related to Rohan?",
     "options": [
-      "Father",
-      "Mother",
-      "Uncle",
-      "Aunt"
+      "Sister",
+      "Cousin",
+      "Niece",
+      "Daughter"
     ],
-    "answer": 0,
-    "solution": "Father",
-    "explanation": "D is the parent of A."
+    "answer": 3,
+    "solution": "Daughter",
+    "explanation": "Rohan's mother's only son is Rohan himself; so the girl is his daughter."
   },
   {
-    "id": 'CGL_T1_FT1_RS_5',
+    "id": 'CGL_T1_FT2_RS_5',
     "question": "Which one set of letters when sequentially placed at the gaps in the given letter series shall complete it?\nA_BA_BA_BA_B",
     "options": [
-      "AABB",
       "ABAB",
       "BABA",
+      "AABB",
       "BBBB"
     ],
-    "answer": 1,
+    "answer": 0,
     "solution": "ABAB",
-    "explanation": "The series is ABBA repeatedly."
+    "explanation": "The series is ABBA repeated."
   },
   {
-    "id": 'CGL_T1_FT1_RS_6',
-    "question": "If 1st January is Monday, what day of the week will be 1st March in the same year (non-leap year)?",
+    "id": 'CGL_T1_FT2_RS_6',
+    "question": "If 1st January 2025 is a Wednesday, what day of the week will be 1st March 2025?",
     "options": [
-      "Thursday",
-      "Friday",
       "Saturday",
-      "Sunday"
+      "Sunday",
+      "Monday",
+      "Tuesday"
     ],
-    "answer": 2,
-    "solution": "Saturday",
-    "explanation": "Jan=31, Feb=28, so 59 days later. 59 mod 7 = 3, so Saturday."
+    "answer": 1,
+    "solution": "Sunday",
+    "explanation": "59 days after Wednesday is Sunday."
   },
   {
-    "id": 'CGL_T1_FT1_RS_7',
-    "question": "Find the odd one out:\n2, 3, 5, 7, 11, 14, 17, 19",
+    "id": 'CGL_T1_FT2_RS_7',
+    "question": "Find the odd one out: 2, 3, 5, 7, 11, 14, 17",
     "options": [
       "14",
       "17",
       "11",
-      "19"
+      "7"
     ],
     "answer": 0,
     "solution": "14",
     "explanation": "14 is not a prime number."
   },
   {
-    "id": 'CGL_T1_FT1_RS_8',
-    "question": "If in a code language, 'MANGO' is written as 'NZOHQ', how is 'APPLE' written?",
+    "id": 'CGL_T1_FT2_RS_8',
+    "question": "If in a code, TREE is written as USFF, how is LEAF written?",
     "options": [
-      "BQQMF",
-      "BQQMG",
-      "BQQNF",
-      "BPPMF"
+      "MFAG",
+      "MFBE",
+      "MFAG",
+      "MFEE"
     ],
     "answer": 0,
-    "solution": "BQQMF",
+    "solution": "MFAG",
     "explanation": "Each letter is replaced by its next letter."
   },
   {
-    "id": 'CGL_T1_FT1_RS_9',
-    "question": "Which number will replace the question mark?\n3, 8, 15, 24, ?, 48",
+    "id": 'CGL_T1_FT2_RS_9',
+    "question": "Which number will replace the question mark?\n5, 11, 23, 47, ?, 191",
     "options": [
-      "35",
-      "36",
-      "38",
-      "40"
+      "95",
+      "97",
+      "99",
+      "101"
     ],
-    "answer": 1,
-    "solution": "36",
-    "explanation": "Pattern: n^2 + 2 (n=1,2,3...)"
+    "answer": 0,
+    "solution": "95",
+    "explanation": "Each term is double the previous plus 1."
   },
   {
-    "id": 'CGL_T1_FT1_RS_10',
-    "question": "Pointing to a man, a woman said, \"His mother is the only daughter of my mother.\" How is the woman related to the man?",
+    "id": 'CGL_T1_FT2_RS_10',
+    "question": "A is the brother of B. C is the sister of B. How is A related to C?",
     "options": [
-      "Mother",
-      "Aunt",
+      "Brother",
       "Sister",
-      "Grandmother"
+      "Cousin",
+      "Uncle"
     ],
     "answer": 0,
-    "solution": "Mother",
-    "explanation": "She is the man's mother."
+    "solution": "Brother",
+    "explanation": "A is C's brother."
   },
   {
-    "id": 'CGL_T1_FT1_RS_11',
-    "question": "If 'EASY' is coded as 'FCZT', how is 'HARD' coded?",
+    "id": 'CGL_T1_FT2_RS_11',
+    "question": "If EGG is coded as FHH, how is HEN coded?",
     "options": [
-      "IBSE",
-      "IBSE",
-      "IBSE",
-      "IBSE"
+      "IFO",
+      "IFO",
+      "IFN",
+      "IFM"
     ],
     "answer": 0,
-    "solution": "IBSE",
+    "solution": "IFO",
     "explanation": "Each letter is replaced by its next letter."
   },
   {
-    "id": 'CGL_T1_FT1_RS_12',
+    "id": 'CGL_T1_FT2_RS_12',
     "question": "Which one is different from the rest?",
     "options": [
-      "Circle",
       "Triangle",
       "Rectangle",
-      "Sphere"
+      "Circle",
+      "Cube"
     ],
     "answer": 3,
-    "solution": "Sphere",
-    "explanation": "Sphere is a 3D shape, others are 2D."
+    "solution": "Cube",
+    "explanation": "Cube is a 3D shape, others are 2D."
   },
   {
-    "id": 'CGL_T1_FT1_RS_13',
+    "id": 'CGL_T1_FT2_RS_13',
     "question": "Find the missing term: ACE, BDF, CEG, ?",
     "options": [
       "DFH",
@@ -176,140 +176,23 @@ export const reasoningQuestions: Question[] =
     ],
     "answer": 0,
     "solution": "DFH",
-    "explanation": "Pattern: Each letter increases by 1."
+    "explanation": "Each letter increases by 1."
   },
   {
-    "id": 'CGL_T1_FT1_RS_14',
-    "question": "Which number is missing?\n5, 9, 17, 33, ?, 129",
+    "id": 'CGL_T1_FT2_RS_14',
+    "question": "Which number is missing?\n3, 8, 15, 24, ?, 48",
     "options": [
-      "65",
-      "49",
-      "65",
-      "97"
-    ],
-    "answer": 0,
-    "solution": "65",
-    "explanation": "Each term is multiplied by 2 and then 1 is subtracted."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_15',
-    "question": "Complete the analogy:\nDog : Bark :: Cat : ?",
-    "options": [
-      "Roar",
-      "Meow",
-      "Chirp",
-      "Moo"
+      "35",
+      "36",
+      "38",
+      "40"
     ],
     "answer": 1,
-    "solution": "Meow",
-    "explanation": "Dog barks, cat meows."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_16',
-    "question": "Which one does not belong to the group?",
-    "options": [
-      "Iron",
-      "Copper",
-      "Aluminium",
-      "Plastic"
-    ],
-    "answer": 3,
-    "solution": "Plastic",
-    "explanation": "Plastic is not a metal."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_17',
-    "question": "If PENCIL is coded as QFODJM, how is ERASER coded?",
-    "options": [
-      "FSBTFS",
-      "FSBTFQ",
-      "FSBTFQ",
-      "FSBTFR"
-    ],
-    "answer": 0,
-    "solution": "FSBTFS",
-    "explanation": "Each letter is replaced by its next letter."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_18',
-    "question": "Find the odd one out:\nCar, Bus, Train, Aeroplane",
-    "options": [
-      "Car",
-      "Bus",
-      "Train",
-      "Aeroplane"
-    ],
-    "answer": 3,
-    "solution": "Aeroplane",
-    "explanation": "Aeroplane travels by air, others by land."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_19',
-    "question": "If 5 + 3 = 24, 6 + 2 = 48, 4 + 4 = 32, then 7 + 1 = ?",
-    "options": [
-      "56",
-      "49",
-      "36",
-      "63"
-    ],
-    "answer": 0,
-    "solution": "56",
-    "explanation": "Multiply the two numbers and then multiply by 2."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_20',
-    "question": "Find the missing number:\n7, 14, 28, 56, ?, 224",
-    "options": [
-      "84",
-      "112",
-      "96",
-      "168"
-    ],
-    "answer": 1,
-    "solution": "112",
-    "explanation": "Each number is multiplied by 2."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_21',
-    "question": "Which of the following is the odd one out?",
-    "options": [
-      "Rose",
-      "Lily",
-      "Lotus",
-      "Mango"
-    ],
-    "answer": 3,
-    "solution": "Mango",
-    "explanation": "Mango is a fruit, others are flowers."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_22',
-    "question": "If in a certain code, 'FISH' is written as 'GJTI', how is 'BIRD' written?",
-    "options": [
-      "CJSE",
-      "CJRF",
-      "CJTE",
-      "CJRE"
-    ],
-    "answer": 0,
-    "solution": "CJSE",
-    "explanation": "Each letter is replaced by its next letter."
-  },
-  {
-    "id": 'CGL_T1_FT1_RS_23',
-    "question": "Which number should come next in the series?\n1, 4, 9, 16, 25, ?",
-    "options": [
-      "36",
-      "49",
-      "64",
-      "81"
-    ],
-    "answer": 0,
     "solution": "36",
-    "explanation": "Series of squares: 1^2, 2^2, 3^2, etc."
+    "explanation": "Pattern: n^2 + 2."
   },
   {
-    "id": 'CGL_T1_FT1_RS_24',
+    "id": 'CGL_T1_FT2_RS_15',
     "question": "Complete the analogy:\nBook : Reading :: Fork : ?",
     "options": [
       "Drawing",
@@ -322,13 +205,130 @@ export const reasoningQuestions: Question[] =
     "explanation": "Book is used for reading, fork is used for eating."
   },
   {
-    "id": 'CGL_T1_FT1_RS_25',
+    "id": 'CGL_T1_FT2_RS_16',
+    "question": "Which one does not belong to the group?",
+    "options": [
+      "Iron",
+      "Copper",
+      "Plastic",
+      "Aluminium"
+    ],
+    "answer": 2,
+    "solution": "Plastic",
+    "explanation": "Plastic is not a metal."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_17',
+    "question": "If PENCIL is coded as QFODJM, how is ERASER coded?",
+    "options": [
+      "FSBTFS",
+      "FSBTFQ",
+      "FSBTFR",
+      "FSBTFN"
+    ],
+    "answer": 0,
+    "solution": "FSBTFS",
+    "explanation": "Each letter is replaced by its next letter."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_18',
+    "question": "Find the odd one out:\nCar, Bus, Train, Aeroplane",
+    "options": [
+      "Car",
+      "Bus",
+      "Train",
+      "Aeroplane"
+    ],
+    "answer": 3,
+    "solution": "Aeroplane",
+    "explanation": "Aeroplane travels by air, others by land."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_19',
+    "question": "If 5 + 3 = 24, 6 + 2 = 48, 4 + 4 = 32, then 7 + 1 = ?",
+    "options": [
+      "56",
+      "49",
+      "36",
+      "63"
+    ],
+    "answer": 0,
+    "solution": "56",
+    "explanation": "Multiply the two numbers and then multiply by 2."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_20',
+    "question": "Find the missing number:\n7, 14, 28, 56, ?, 224",
+    "options": [
+      "84",
+      "112",
+      "96",
+      "168"
+    ],
+    "answer": 1,
+    "solution": "112",
+    "explanation": "Each number is multiplied by 2."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_21',
+    "question": "Which of the following is the odd one out?",
+    "options": [
+      "Rose",
+      "Lily",
+      "Lotus",
+      "Mango"
+    ],
+    "answer": 3,
+    "solution": "Mango",
+    "explanation": "Mango is a fruit, others are flowers."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_22',
+    "question": "If in a certain code, 'FISH' is written as 'GJTI', how is 'BIRD' written?",
+    "options": [
+      "CJSE",
+      "CJRF",
+      "CJTE",
+      "CJRE"
+    ],
+    "answer": 0,
+    "solution": "CJSE",
+    "explanation": "Each letter is replaced by its next letter."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_23',
+    "question": "Which number should come next in the series?\n1, 4, 9, 16, 25, ?",
+    "options": [
+      "36",
+      "49",
+      "64",
+      "81"
+    ],
+    "answer": 0,
+    "solution": "36",
+    "explanation": "Series of squares: 1^2, 2^2, 3^2, etc."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_24',
+    "question": "Complete the analogy:\nBook : Reading :: Fork : ?",
+    "options": [
+      "Drawing",
+      "Writing",
+      "Stirring",
+      "Eating"
+    ],
+    "answer": 3,
+    "solution": "Eating",
+    "explanation": "Book is used for reading, fork is used for eating."
+  },
+  {
+    "id": 'CGL_T1_FT2_RS_25',
     "question": "If 'FLOWER' is coded as 'GMQXFS', how is 'PLANT' coded?",
     "options": [
       "QMBUO",
       "QMBNU",
-      "QMBNU",
-      "QMBNV"
+      "QMBNV",
+      "QMBNU"
     ],
     "answer": 0,
     "solution": "QMBUO",

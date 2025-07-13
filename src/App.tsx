@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import TopicPage from './pages/subtopics/TopicPage';
 import ExamRoadmap from './pages/roadmaps/ExamRoadmap';
 import TestRunner from './pages/tests/TestRunner';
+import TestAnalysis from './pages/tests/TestAnalysis';
+import NotFound from './pages/pageNotFound';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           {/* Add your routes here */}
-          {/* Subtopic content/quizzes route */}
+          {/* Subtopic content/quizzes route */}  
           <Route path="topic/:chapter" element={<TopicPage />} />
           <Route index element={<Home />} />
           <Route path="/about" element={<div>About Page</div>} />
@@ -20,9 +22,12 @@ function App() {
           <Route path="roadmaps/:examSlug" element={<ExamRoadmap />} />
           {/* Test runner page */}
           <Route path="/tests/runner" element={<TestRunner />} />
-          {/* Fallback for unknown routes */}
-          <Route path="*" element={<div>Page Not Found</div>} />
+          {/* Test analysis page */}
+          <Route path="/tests/analysis" element={<TestAnalysis />} />
+          {/* Add more routes as needed */}
         </Route>
+        {/* Fallback for unknown routes - OUTSIDE MainLayout */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

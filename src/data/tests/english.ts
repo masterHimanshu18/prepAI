@@ -1,6 +1,6 @@
 // Define the Question type if not already imported
 export type Question = {
-  id: number;
+  id: string | number;
   question: string;
   options: string[];
   answer: number;
@@ -11,7 +11,7 @@ export type Question = {
 export const englishQuestions: Question[] = 
 [
   {
-    "id": 1,
+    "id": 'CGL_T1_FT1_EN_1',
     "question": "Select the synonym of the given word.\nAbundant",
     "options": [
       "Scarce",
@@ -24,7 +24,7 @@ export const englishQuestions: Question[] =
     "explanation": "Abundant means existing in large quantities, which is similar to plenty."
   },
   {
-    "id": 2,
+    "id": 'CGL_T1_FT1_EN_2',
     "question": "Select the antonym of the given word.\nHostile",
     "options": [
       "Friendly",
@@ -37,7 +37,7 @@ export const englishQuestions: Question[] =
     "explanation": "Hostile means unfriendly or antagonistic, so the opposite is friendly."
   },
   {
-    "id": 3,
+    "id": 'CGL_T1_FT1_EN_3',
     "question": "Choose the correct spelling.",
     "options": [
       "Accomodate",
@@ -50,7 +50,7 @@ export const englishQuestions: Question[] =
     "explanation": "The correct spelling is 'accommodate' with two c's and two m's."
   },
   {
-    "id": 4,
+    "id": 'CGL_T1_FT1_EN_4',
     "question": "Find the error in the sentence.\nHe do not likes to play cricket.",
     "options": [
       "do",
@@ -63,7 +63,7 @@ export const englishQuestions: Question[] =
     "explanation": "It should be 'does not like' instead of 'do not likes.'"
   },
   {
-    "id": 5,
+    "id": 'CGL_T1_FT1_EN_5',
     "question": "Select the synonym of the given word.\nCandid",
     "options": [
       "Secret",
@@ -76,7 +76,7 @@ export const englishQuestions: Question[] =
     "explanation": "Candid means truthful and straightforward, similar to honest."
   },
   {
-    "id": 6,
+    "id": 'CGL_T1_FT1_EN_6',
     "question": "Choose the correct one-word substitution.\nA person who talks too much",
     "options": [
       "Reticent",
@@ -89,7 +89,7 @@ export const englishQuestions: Question[] =
     "explanation": "Garrulous describes someone who talks excessively."
   },
   {
-    "id": 7,
+    "id": 'CGL_T1_FT1_EN_7',
     "question": "Fill in the blank with the correct word.\nShe is _____ than her sister.",
     "options": [
       "tall",
@@ -102,7 +102,7 @@ export const englishQuestions: Question[] =
     "explanation": "The comparative form 'taller' is used when comparing two people."
   },
   {
-    "id": 8,
+    "id": 'CGL_T1_FT1_EN_8',
     "question": "Select the antonym of the given word.\nOptimistic",
     "options": [
       "Hopeful",
@@ -115,7 +115,7 @@ export const englishQuestions: Question[] =
     "explanation": "Optimistic means expecting good things; pessimistic is the opposite."
   },
   {
-    "id": 9,
+    "id": 'CGL_T1_FT1_EN_9',
     "question": "Choose the correctly punctuated sentence.",
     "options": [
       "She said, \"I am coming.\"",
@@ -128,7 +128,7 @@ export const englishQuestions: Question[] =
     "explanation": "Direct speech must be enclosed in quotation marks and preceded by a comma."
   },
   {
-    "id": 10,
+    "id": 'CGL_T1_FT1_EN_10',
     "question": "Select the synonym of the given word.\nEloquent",
     "options": [
       "Silent",
@@ -141,7 +141,7 @@ export const englishQuestions: Question[] =
     "explanation": "Eloquent means fluent or persuasive in speaking or writing."
   },
   {
-    "id": 11,
+    "id": 'CGL_T1_FT1_EN_11',
     "question": "Choose the correct passive form.\nThey are playing football.",
     "options": [
       "Football is played by them.",
@@ -154,7 +154,7 @@ export const englishQuestions: Question[] =
     "explanation": "Present continuous passive is 'is being played.'"
   },
   {
-    "id": 12,
+    "id": 'CGL_T1_FT1_EN_12',
     "question": "Select the antonym of the given word.\nDiligent",
     "options": [
       "Industrious",
@@ -167,7 +167,7 @@ export const englishQuestions: Question[] =
     "explanation": "Diligent means hardworking; lazy is the opposite."
   },
   {
-    "id": 13,
+    "id": 'CGL_T1_FT1_EN_13',
     "question": "Find the correctly spelled word.",
     "options": [
       "Perserverance",
@@ -180,7 +180,7 @@ export const englishQuestions: Question[] =
     "explanation": "'Perseverance' is the correct spelling."
   },
   {
-    "id": 14,
+    "id": 'CGL_T1_FT1_EN_14',
     "question": "Choose the correct idiom for the meaning: 'To start something new'",
     "options": [
       "Break the ice",
@@ -193,7 +193,7 @@ export const englishQuestions: Question[] =
     "explanation": "'Turn a new leaf' means to start anew or make a fresh start."
   },
   {
-    "id": 15,
+    "id": 'CGL_T1_FT1_EN_15',
     "question": "Fill in the blank with the correct preposition.\nHe is fond _____ music.",
     "options": [
       "at",
@@ -206,7 +206,7 @@ export const englishQuestions: Question[] =
     "explanation": "The correct phrase is 'fond of.'"
   },
   {
-    "id": 16,
+    "id": 'CGL_T1_FT1_EN_16',
     "question": "Select the synonym of the given word.\nReluctant",
     "options": [
       "Willing",
@@ -219,7 +219,7 @@ export const englishQuestions: Question[] =
     "explanation": "Reluctant means unwilling or hesitant."
   },
   {
-    "id": 17,
+    "id": 'CGL_T1_FT1_EN_17',
     "question": "Choose the correct indirect speech.\nShe said, \"I will come tomorrow.\"",
     "options": [
       "She said that she will come tomorrow.",
@@ -232,7 +232,7 @@ export const englishQuestions: Question[] =
     "explanation": "'Will' becomes 'would' and 'tomorrow' becomes 'the next day' in indirect speech."
   },
   {
-    "id": 18,
+    "id": 'CGL_T1_FT1_EN_18',
     "question": "Select the antonym of the given word.\nGenerous",
     "options": [
       "Kind",
@@ -245,7 +245,7 @@ export const englishQuestions: Question[] =
     "explanation": "Generous means giving; selfish is the opposite."
   },
   {
-    "id": 19,
+    "id": 'CGL_T1_FT1_EN_19',
     "question": "Choose the correct one-word substitution.\nA person who believes in fate",
     "options": [
       "Fatalist",
@@ -258,7 +258,7 @@ export const englishQuestions: Question[] =
     "explanation": "A fatalist is someone who believes that all events are predetermined."
   },
   {
-    "id": 20,
+    "id": 'CGL_T1_FT1_EN_20',
     "question": "Find the error in the sentence.\nEach of the boys have done their homework.",
     "options": [
       "Each",
@@ -271,7 +271,7 @@ export const englishQuestions: Question[] =
     "explanation": "'Each' is singular, so it should be 'has done.'"
   },
   {
-    "id": 21,
+    "id": 'CGL_T1_FT1_EN_21',
     "question": "Select the synonym of the given word.\nVivid",
     "options": [
       "Faint",
@@ -284,7 +284,7 @@ export const englishQuestions: Question[] =
     "explanation": "Vivid means producing powerful feelings or strong images, similar to lively."
   },
   {
-    "id": 22,
+    "id": 'CGL_T1_FT1_EN_22',
     "question": "Choose the correct phrase to complete the sentence.\nIf I _____ you, I would apologize.",
     "options": [
       "am",
@@ -297,7 +297,7 @@ export const englishQuestions: Question[] =
     "explanation": "The correct conditional phrase is 'If I were you.'"
   },
   {
-    "id": 23,
+    "id": 'CGL_T1_FT1_EN_23',
     "question": "Select the antonym of the given word.\nExpand",
     "options": [
       "Increase",
@@ -310,7 +310,7 @@ export const englishQuestions: Question[] =
     "explanation": "Expand means to become larger; contract is the opposite."
   },
   {
-    "id": 24,
+    "id": 'CGL_T1_FT1_EN_24',
     "question": "Choose the correct spelling.",
     "options": [
       "Recieve",
@@ -323,7 +323,7 @@ export const englishQuestions: Question[] =
     "explanation": "'Receive' follows the 'i before e except after c' rule."
   },
   {
-    "id": 25,
+    "id": 'CGL_T1_FT1_EN_25',
     "question": "Select the synonym of the given word.\nAdept",
     "options": [
       "Clumsy",

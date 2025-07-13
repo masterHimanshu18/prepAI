@@ -1,6 +1,6 @@
 // Define the Question type if not already imported
 export interface Question {
-  id: number;
+  id: string | number; // Use string for consistency with other tests
   question: string;
   options: string[];
   answer: number;
@@ -10,7 +10,7 @@ export interface Question {
 
 export const generalScienceQuestions: Question[] = [
   {
-    "id": 1,
+    "id": 'CGL_T1_FT1_GA_1',
     "question": "Who was the first Governor-General of independent India?",
     "options": [
       "C. Rajagopalachari",
@@ -23,7 +23,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Lord Mountbatten was appointed as the first Governor-General of independent India."
   },
   {
-    "id": 2,
+    "id": 'CGL_T1_FT1_GA_2',
     "question": "Which river is known as the 'Sorrow of Bihar'?",
     "options": [
       "Ganga",
@@ -36,7 +36,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "The Kosi river is called the 'Sorrow of Bihar' due to its frequent floods."
   },
   {
-    "id": 3,
+    "id": 'CGL_T1_FT1_GA_3',
     "question": "Who is known as the 'Father of Indian Constitution'?",
     "options": [
       "Dr. B.R. Ambedkar",
@@ -49,7 +49,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee of the Indian Constitution."
   },
   {
-    "id": 4,
+    "id": 'CGL_T1_FT1_GA_4',
     "question": "Which is the largest planet in our Solar System?",
     "options": [
       "Earth",
@@ -62,7 +62,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Jupiter is the largest planet in the Solar System."
   },
   {
-    "id": 5,
+    "id": 'CGL_T1_FT1_GA_5',
     "question": "Who discovered the sea route to India?",
     "options": [
       "Christopher Columbus",
@@ -75,7 +75,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Vasco da Gama discovered the sea route to India in 1498."
   },
   {
-    "id": 6,
+    "id": 'CGL_T1_FT1_GA_6',
     "question": "Which Mughal Emperor built the Red Fort in Delhi?",
     "options": [
       "Akbar",
@@ -88,7 +88,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Shah Jahan built the Red Fort in Delhi."
   },
   {
-    "id": 7,
+    "id": 'CGL_T1_FT1_GA_7',
     "question": "What is the chemical symbol for Gold?",
     "options": [
       "Gd",
@@ -101,7 +101,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "The chemical symbol for Gold is Au."
   },
   {
-    "id": 8,
+    "id": 'CGL_T1_FT1_GA_8',
     "question": "Who was the first Indian to win a Nobel Prize?",
     "options": [
       "Rabindranath Tagore",
@@ -114,7 +114,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Rabindranath Tagore won the Nobel Prize in Literature in 1913."
   },
   {
-    "id": 9,
+    "id": 'CGL_T1_FT1_GA_9',
     "question": "Which gas is most abundant in the Earth's atmosphere?",
     "options": [
       "Oxygen",
@@ -127,7 +127,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Nitrogen constitutes about 78% of Earth's atmosphere."
   },
   {
-    "id": 10,
+    "id": 'CGL_T1_FT1_GA_10',
     "question": "Who was the first President of India?",
     "options": [
       "Dr. Rajendra Prasad",
@@ -140,7 +140,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Dr. Rajendra Prasad was the first President of India."
   },
   {
-    "id": 11,
+    "id": 'CGL_T1_FT1_GA_11',
     "question": "Which is the longest river in India?",
     "options": [
       "Yamuna",
@@ -153,7 +153,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "The Ganga is the longest river in India."
   },
   {
-    "id": 12,
+    "id": 'CGL_T1_FT1_GA_12',
     "question": "Who invented the telephone?",
     "options": [
       "Alexander Graham Bell",
@@ -166,7 +166,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Alexander Graham Bell invented the telephone in 1876."
   },
   {
-    "id": 13,
+    "id": 'CGL_T1_FT1_GA_13',
     "question": "Which is the largest desert in India?",
     "options": [
       "Thar",
@@ -179,7 +179,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "The Thar Desert is the largest desert in India."
   },
   {
-    "id": 14,
+    "id": 'CGL_T1_FT1_GA_14',
     "question": "Who wrote the book 'Discovery of India'?",
     "options": [
       "Mahatma Gandhi",
@@ -192,7 +192,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Jawaharlal Nehru wrote 'Discovery of India' during his imprisonment."
   },
   {
-    "id": 15,
+    "id": 'CGL_T1_FT1_GA_15',
     "question": "Which organ purifies our blood?",
     "options": [
       "Heart",
@@ -205,7 +205,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Kidneys filter and purify blood in the human body."
   },
   {
-    "id": 16,
+    "id": 'CGL_T1_FT1_GA_16',
     "question": "Who was the founder of the Maurya Empire?",
     "options": [
       "Ashoka",
@@ -218,7 +218,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Chandragupta Maurya founded the Maurya Empire."
   },
   {
-    "id": 17,
+    "id": 'CGL_T1_FT1_GA_17',
     "question": "Which is the smallest bone in the human body?",
     "options": [
       "Stapes",
@@ -231,7 +231,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "The stapes is the smallest bone, located in the middle ear."
   },
   {
-    "id": 18,
+    "id": 'CGL_T1_FT1_GA_18',
     "question": "Which planet is known as the 'Red Planet'?",
     "options": [
       "Jupiter",
@@ -244,7 +244,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Mars is called the 'Red Planet' because of its reddish appearance."
   },
   {
-    "id": 19,
+    "id": 'CGL_T1_FT1_GA_19',
     "question": "Who was the first woman Prime Minister of India?",
     "options": [
       "Sarojini Naidu",
@@ -257,7 +257,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Indira Gandhi was the first woman Prime Minister of India."
   },
   {
-    "id": 20,
+    "id": 'CGL_T1_FT1_GA_20',
     "question": "Which is the largest continent in the world?",
     "options": [
       "Africa",
@@ -270,7 +270,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Asia is the largest continent in terms of area and population."
   },
   {
-    "id": 21,
+    "id": 'CGL_T1_FT1_GA_21',
     "question": "Who invented the light bulb?",
     "options": [
       "Thomas Edison",
@@ -283,7 +283,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Thomas Edison is credited with inventing the practical electric light bulb."
   },
   {
-    "id": 22,
+    "id": 'CGL_T1_FT1_GA_22',
     "question": "Which Indian state is the largest by area?",
     "options": [
       "Maharashtra",
@@ -296,7 +296,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Rajasthan is the largest state in India by area."
   },
   {
-    "id": 23,
+    "id": 'CGL_T1_FT1_GA_23',
     "question": "Who is known as the 'Missile Man of India'?",
     "options": [
       "Dr. Homi Bhabha",
@@ -309,7 +309,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Dr. A.P.J. Abdul Kalam is called the 'Missile Man of India' for his work with ballistic missiles."
   },
   {
-    "id": 24,
+    "id": 'CGL_T1_FT1_GA_24',
     "question": "Which is the highest mountain peak in India?",
     "options": [
       "Kanchenjunga",
@@ -322,7 +322,7 @@ export const generalScienceQuestions: Question[] = [
     "explanation": "Kanchenjunga is the highest mountain peak in India."
   },
   {
-    "id": 25,
+    "id": 'CGL_T1_FT1_GA_25',
     "question": "Who was the first Indian to go into space?",
     "options": [
       "Kalpana Chawla",

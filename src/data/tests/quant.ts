@@ -1,5 +1,5 @@
 export type Question = {
-  id: number;
+  id: string | number;
   question: string;
   options: string[];
   answer: number;
@@ -10,7 +10,7 @@ export type Question = {
 export const quantQuestions: Question[] = 
 [
   {
-    "id": 1,
+    "id": 'CGL_T1_FT1_QT_1',
     "question": "What is the value of 25% of 200?",
     "options": [
       "25",
@@ -23,7 +23,7 @@ export const quantQuestions: Question[] =
     "explanation": "25% of 200 = (25/100) × 200 = 50."
   },
   {
-    "id": 2,
+    "id": 'CGL_T1_FT1_QT_2',
     "question": "If 3x + 7 = 22, what is the value of x?",
     "options": [
       "3",
@@ -36,7 +36,7 @@ export const quantQuestions: Question[] =
     "explanation": "3x = 22 - 7 = 15, so x = 15/3 = 5."
   },
   {
-    "id": 3,
+    "id": 'CGL_T1_FT1_QT_3',
     "question": "What is the square root of 144?",
     "options": [
       "10",
@@ -49,7 +49,7 @@ export const quantQuestions: Question[] =
     "explanation": "12 × 12 = 144."
   },
   {
-    "id": 4,
+    "id": 'CGL_T1_FT1_QT_4',
     "question": "A sum of ₹500 is divided between A and B in the ratio 3:2. What is B’s share?",
     "options": [
       "₹200",
@@ -62,7 +62,7 @@ export const quantQuestions: Question[] =
     "explanation": "B's share = (2/5) × 500 = ₹200."
   },
   {
-    "id": 5,
+    "id": 'CGL_T1_FT1_QT_5',
     "question": "If the perimeter of a square is 40 cm, what is its area?",
     "options": [
       "100 cm²",
@@ -75,7 +75,7 @@ export const quantQuestions: Question[] =
     "explanation": "Side = 40/4 = 10 cm; area = 10 × 10 = 100 cm²."
   },
   {
-    "id": 6,
+    "id": 'CGL_T1_FT1_QT_6',
     "question": "If the cost price is ₹240 and profit is 25%, what is the selling price?",
     "options": [
       "₹260",
@@ -88,7 +88,7 @@ export const quantQuestions: Question[] =
     "explanation": "SP = CP + 25% of CP = 240 + 60 = ₹300."
   },
   {
-    "id": 7,
+    "id": 'CGL_T1_FT1_QT_7',
     "question": "The average of 5, 8, 12, 15, and 20 is:",
     "options": [
       "10",
@@ -101,7 +101,7 @@ export const quantQuestions: Question[] =
     "explanation": "Sum = 60; Average = 60/5 = 12."
   },
   {
-    "id": 8,
+    "id": 'CGL_T1_FT1_QT_8',
     "question": "What is the value of (2/3) + (1/6)?",
     "options": [
       "1/2",
@@ -114,7 +114,7 @@ export const quantQuestions: Question[] =
     "explanation": "Common denominator: (4+1)/6 = 5/6."
   },
   {
-    "id": 9,
+    "id": 'CGL_T1_FT1_QT_9',
     "question": "If a train travels 120 km in 2 hours, what is its average speed?",
     "options": [
       "40 km/h",
@@ -127,7 +127,7 @@ export const quantQuestions: Question[] =
     "explanation": "Speed = Distance/Time = 120/2 = 60 km/h."
   },
   {
-    "id": 10,
+    "id": 'CGL_T1_FT1_QT_10',
     "question": "What is the simple interest on ₹1000 at 5% per annum for 2 years?",
     "options": [
       "₹50",
@@ -140,7 +140,7 @@ export const quantQuestions: Question[] =
     "explanation": "SI = (1000×5×2)/100 = ₹100."
   },
   {
-    "id": 11,
+    "id": 'CGL_T1_FT1_QT_11',
     "question": "If the ratio of boys to girls in a class is 3:2 and there are 30 boys, how many girls are there?",
     "options": [
       "10",
@@ -153,7 +153,7 @@ export const quantQuestions: Question[] =
     "explanation": "If 3 parts = 30, then 1 part = 10; girls = 2×10 = 20."
   },
   {
-    "id": 12,
+    "id": 'CGL_T1_FT1_QT_12',
     "question": "What is 15% of 80?",
     "options": [
       "10",
@@ -166,7 +166,7 @@ export const quantQuestions: Question[] =
     "explanation": "15% of 80 = (15/100) × 80 = 12."
   },
   {
-    "id": 13,
+    "id": 'CGL_T1_FT1_QT_13',
     "question": "The HCF of 36 and 48 is:",
     "options": [
       "6",
@@ -179,7 +179,7 @@ export const quantQuestions: Question[] =
     "explanation": "12 is the highest common factor."
   },
   {
-    "id": 14,
+    "id": 'CGL_T1_FT1_QT_14',
     "question": "If the sum of two numbers is 25 and their difference is 5, what is the bigger number?",
     "options": [
       "10",
@@ -192,7 +192,7 @@ export const quantQuestions: Question[] =
     "explanation": "x + y = 25, x - y = 5 ⇒ x = 15."
   },
   {
-    "id": 15,
+    "id": 'CGL_T1_FT1_QT_15',
     "question": "If the radius of a circle is 7 cm, what is its circumference? (Take π = 22/7)",
     "options": [
       "22 cm",
@@ -205,7 +205,7 @@ export const quantQuestions: Question[] =
     "explanation": "Circumference = 2πr = 2×22/7×7 = 44 cm."
   },
   {
-    "id": 16,
+    "id": 'CGL_T1_FT1_QT_16',
     "question": "A shopkeeper sells an article at a loss of 10%. If the cost price is ₹200, what is the selling price?",
     "options": [
       "₹180",
@@ -218,7 +218,7 @@ export const quantQuestions: Question[] =
     "explanation": "SP = CP - 10% of CP = 200 - 20 = ₹180."
   },
   {
-    "id": 17,
+    "id": 'CGL_T1_FT1_QT_17',
     "question": "What is the value of 2³ × 3²?",
     "options": [
       "12",
@@ -231,7 +231,7 @@ export const quantQuestions: Question[] =
     "explanation": "2³ = 8; 3² = 9; 8 × 9 = 72."
   },
   {
-    "id": 18,
+    "id": 'CGL_T1_FT1_QT_18',
     "question": "If a number is divided by 5, the remainder is 3. What is the remainder when the same number is divided by 10?",
     "options": [
       "3",
@@ -244,7 +244,7 @@ export const quantQuestions: Question[] =
     "explanation": "Possible number: 5k+3. When divided by 10: (5k+3) % 10. For k=1, 8; for k=2, 13%10=3; but in general, remainder can be 3 or 8 or 7 depending on k."
   },
   {
-    "id": 19,
+    "id": 'CGL_T1_FT1_QT_19',
     "question": "A man can do a piece of work in 10 days. How many days will 5 men take to complete the same work?",
     "options": [
       "2",
@@ -257,7 +257,7 @@ export const quantQuestions: Question[] =
     "explanation": "More men, less time: 10/5 = 2 days."
   },
   {
-    "id": 20,
+    "id": 'CGL_T1_FT1_QT_20',
     "question": "If the sum of the angles of a polygon is 1080°, how many sides does it have?",
     "options": [
       "6",
@@ -270,7 +270,7 @@ export const quantQuestions: Question[] =
     "explanation": "Sum = (n-2)×180 ⇒ n = (1080/180) + 2 = 8."
   },
   {
-    "id": 21,
+    "id": 'CGL_T1_FT1_QT_21',
     "question": "If 12 men can complete a work in 6 days, how many men are needed to complete it in 4 days?",
     "options": [
       "8",
@@ -283,7 +283,7 @@ export const quantQuestions: Question[] =
     "explanation": "Men × Days = Constant. 12×6 = x×4 ⇒ x = 18."
   },
   {
-    "id": 22,
+    "id": 'CGL_T1_FT1_QT_22',
     "question": "What is the value of 0.25 × 0.4?",
     "options": [
       "0.01",
@@ -296,7 +296,7 @@ export const quantQuestions: Question[] =
     "explanation": "0.25 × 0.4 = 0.10."
   },
   {
-    "id": 23,
+    "id": 'CGL_T1_FT1_QT_23',
     "question": "If the sides of a triangle are 3 cm, 4 cm, and 5 cm, what is its area?",
     "options": [
       "6 cm²",
@@ -309,7 +309,7 @@ export const quantQuestions: Question[] =
     "explanation": "It's a right triangle: (1/2)×3×4=6 cm²."
   },
   {
-    "id": 24,
+    "id": 'CGL_T1_FT1_QT_24',
     "question": "The value of 5! (5 factorial) is:",
     "options": [
       "60",
@@ -322,7 +322,7 @@ export const quantQuestions: Question[] =
     "explanation": "5! = 5×4×3×2×1 = 120."
   },
   {
-    "id": 25,
+    "id": 'CGL_T1_FT1_QT_25',
     "question": "If the average of three numbers is 20, what is their sum?",
     "options": [
       "40",

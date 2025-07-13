@@ -148,7 +148,7 @@ const Navbar = () => {
                 <ListItem NavLink="/">Home</ListItem>
                 <ListItem NavLink="/roadmaps" hasDropdown={true}>Exams</ListItem>
                 <ListItem NavLink="/tests">Test Series</ListItem>
-                <ListItem NavLink="/about">About</ListItem>
+                <ListItem NavLink="/abou">About</ListItem>
               </ul>
             </nav>
           </div>
