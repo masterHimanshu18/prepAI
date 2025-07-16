@@ -1,6 +1,6 @@
 // File: src/pages/tests/TestRunner.tsx
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { UserCircle2, X } from 'lucide-react';
 import { allTests } from '../../data/tests/allTests';
@@ -82,7 +82,6 @@ const TestRunner: React.FC = () => {
   const { search } = useLocation();
   const testId     = new URLSearchParams(search).get('testId') ?? '';
   const test: TestConfig | undefined = allTests[testId];
-  const navigate   = useNavigate();
   if (!test) return <div className="p-8 text-red-600">Invalid or missing testId</div>;
 
   /* ─── State ─── */
@@ -153,17 +152,20 @@ const TestRunner: React.FC = () => {
   };
 
   function handleFinalSubmit() {
-    // Store result before navigating
-    if (!test) return; // ✅ Prevents error if test is undefined
+  if (!test) return;
+  localStorage.setItem('lastTest', JSON.stringify({
+    title: test.title,
+    sections: test.sections,
+    answers,
+  }));
 
-    localStorage.setItem('lastTest', JSON.stringify({
-      title: test?.title,
-      sections: test?.sections,
-      answers, // map of id => selectedIndex
-    }));
-
-    navigate("/tests/analysis");
+  // ➊ If opened via window.open, alert the opener
+  if (window.opener && !window.opener.closed) {
+    window.opener.location.href = '/tests/analysis';
   }
+  // ➌ Then close this runner tab
+  window.close();
+}
 
   /* ─── Legend counts for current section ─── */
   let cntAnswered = 0,
