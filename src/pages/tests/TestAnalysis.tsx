@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bar } from "react-chartjs-2";
+import { barOptions } from "../../assets/chartOptions";
 import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedScoreBar } from "../../components/common/AnimatedScoreBar";
 import {
@@ -109,40 +110,6 @@ const TestAnalysis: React.FC = () => {
     ],
   };
 
-  const barOptions = {
-    indexAxis: "y" as const,
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: (ctx: any) =>
-            `Marks: ${ctx.raw} / ${sectionStats[ctx.dataIndex].total * 2}`,
-        },
-      },
-    },
-    scales: {
-      x: {
-        beginAtZero: true,
-        grid: { color: "#e0e7ef44" },
-        ticks: { color: "#2563eb", font: { weight: "bold" } },
-        title: {
-          display: true,
-          text: "Marks",
-          color: "#2563eb",
-          font: { weight: "bold" },
-        },
-      },
-      y: {
-        grid: { display: false },
-        ticks: { color: "#334155", font: { weight: "bold" } },
-      },
-    },
-    animation: {
-      duration: 900,
-      easing: "easeOutQuart" as const,
-    },
-  };
 
   // Table row animation
   const rowVariants = {
