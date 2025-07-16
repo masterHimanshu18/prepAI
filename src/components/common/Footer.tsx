@@ -10,12 +10,12 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="flex flex items-center relative z-10 text-white pb-10 pt-20 lg:pb-20 lg:pt-[120px]" style={{ backgroundColor: 'rgb(6, 0, 0)' }}>
-      <div className="container mx-auto px-4">
+    <footer className=" relative z-10 text-black pb-8 pt-10 lg:pb-8 lg:pt-10 border-t border-gray-300 shadow-[0_4px_6px_4px_rgba(0,0,0,0.9)]" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+      <div className="flex flex items-center container mx-auto px-4">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div className="mb-10 w-full">
-              <Link to="/" className="mb-6 inline-block max-w-[160px]">
+              <Link to="/" className="mb-6 inline-block max-w-[100px]">
               <motion.div
               whileHover={{ scale: 0.9, rotate: 10 }} // Scale up and rotate on hover
               transition={{ type: "spring", stiffness: 300 }} // Spring animation
@@ -27,11 +27,11 @@ const Footer = () => {
               />
             </motion.div>
               </Link>
-              <p className="mb-7 text-base text-gray-300">
+              <p className="mb-7 text-base text-black">
               Streamline your prep and achieve your dream with PrepAI, the ultimate tool for focused preparation and faster success.With its tailored approach, PrepAI ensures you stay on track, making your preparation more efficient and effective than ever before.
               </p>
-              <p className="flex items-center text-sm font-medium text-gray-300">
-                <span className="mr-3 text-white">
+              <p className="flex items-center text-sm font-medium text-black">
+                <span className="mr-3 text-black">
                     <PhoneIcon className="h-5 w-5" />
                 </span>
                 <span>+91 9876543210</span>
@@ -55,7 +55,7 @@ const Footer = () => {
           
           <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
+              <h4 className="mb-9 text-lg font-semibold text-black">
                 Follow Us On
               </h4>
               <div className="mb-6 flex items-center">
@@ -63,7 +63,7 @@ const Footer = () => {
                 <SocialLink href="/#" icon="twitter" />
                 <SocialLink href="/#" icon="youtube" />
               </div>
-              <p className="text-base text-gray-300">
+              <p className="text-base text-black">
                 &copy; {new Date().getFullYear()} prepAI
               </p>
             </div>
@@ -78,7 +78,7 @@ const LinkGroup = ({ children, header} : { children: React.ReactNode; header: st
   return (
     <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
       <div className="mb-10 w-full">
-        <h4 className="mb-9 text-lg font-semibold text-white">
+        <h4 className="mb-9 text-lg font-semibold text-black">
           {header}
         </h4>
         <ul className="space-y-3">{children}</ul>
@@ -92,7 +92,7 @@ const NavLink = ({ to, label }: { to: string; label: string }) => {
     <li>
       <Link
         to={to}
-        className="inline-block text-base text-gray-300 hover:text-blue-200 transition duration-150"
+        className="inline-block text-base text-black hover:text-blue-800 transition duration-150"
       >
         {label}
       </Link>
@@ -111,7 +111,7 @@ const SocialLink = ({ href, icon }: { href: string; icon: string }) => {
     return (
       <a
         href={href}
-        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-gray-700 text-gray-300 hover:border-blue-500 hover:bg-blue-500 hover:text-white transition duration-150"
+        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-black text-black hover:border-blue-800 hover:bg-blue-800 hover:text-white transition duration-150"
       >
         <Icon className="h-4 w-4" />
       </a>

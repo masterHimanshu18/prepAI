@@ -9,9 +9,9 @@ const MainLayout: React.FC = () => {
   const isTestRunner = location.pathname.includes('/tests/runner');
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 overflow-x-hidden">
       {!isTestRunner && (
-        <header className="bg-black px-2 shadow">
+        <header>
           <Navbar />
         </header>
       )}
