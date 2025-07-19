@@ -4,7 +4,8 @@ import { Bar } from "react-chartjs-2";
 import { barOptions } from "../../assets/chartOptions";
 import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedScoreBar } from "../../components/common/AnimatedScoreBar";
-import { Leaderboard } from "../../components/common/leaderboard";
+import { Leaderboard } from "../../components/common/Leaderboards";
+
 import {
   Chart as ChartJS,
   BarElement,
