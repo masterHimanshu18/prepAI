@@ -7,6 +7,7 @@ import TopicPage from './pages/subtopics/TopicPage';
 import ExamRoadmap from './pages/roadmaps/ExamRoadmap';
 import TestRunner from './pages/tests/TestRunner';
 import TestAnalysis from './pages/tests/TestAnalysis';
+import TestReview from './pages/tests/TestReview';
 import NotFound from './pages/pageNotFound';
 
 function App() {
@@ -31,8 +32,11 @@ function App() {
 
           {/* Test analysis page */}
           <Route path="tests/analysis" element={<TestAnalysis />} />
+          
         </Route>
 
+          {/* Test review page */}
+          <Route path="tests/review" element={<TestReview />} />
         {/* Catch‑all fallback for unknown routes */}
         <Route path="*" element={<NotFound />} />
       </Routes>

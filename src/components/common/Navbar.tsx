@@ -152,7 +152,7 @@ const Navbar = () => {
           <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
             <Link
               to="/signin"
-              className="px-5 py-2 text-base font-medium text-dark hover:text-blue-200"
+              className="px-5 py-2 text-base font-medium text-dark hover:text-blue-800"
             >
               Sign in
             </Link>

@@ -4,6 +4,7 @@ import { Bar } from "react-chartjs-2";
 import { barOptions } from "../../assets/chartOptions";
 import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedScoreBar } from "../../components/common/AnimatedScoreBar";
+import { Leaderboard } from "../../components/common/leaderboard";
 import {
   Chart as ChartJS,
   BarElement,
@@ -139,24 +140,35 @@ const TestAnalysis: React.FC = () => {
             >
               {test.title}
             </motion.h1>
-            <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 via-blue-100 to-white border-l-4 border-blue-400 shadow">
+            <div className="p-4 rounded-xl bg-gradient-to-br from-gray-100 via-gray-300 to-white border-l-4 border-blue-400 shadow">
               <AnimatedScoreBar score={score} maxScore={maxScore} cutoffRatio={0.6} />
             </div>
 
           </div>
         </motion.div>
         {/* Horizontal Bar Chart */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.7 }}
-          className="bg-white max-w-2xl m-8 rounded-2xl border border-gray-200 shadow-lg p-6"
-        >
-          <div className="mb-4 text-center text-xl font-bold text-black-700">
-            Section-wise Marks
+        <div className="flex flex-col lg:flex-row justify-center items-start gap-6 flex-wrap">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className="bg-white max-w-2xl rounded-2xl border border-gray-200 shadow-lg p-6 w-full lg:w-1/2"
+          >
+            <div className="mb-4 text-center text-xl font-bold text-black-700">
+              Section-wise Marks
+            </div>
+            <Bar data={barData} options={barOptions} />
+          </motion.div>
+
+          <div className="w-full lg:w-1/3">
+            <Leaderboard
+              userRank={69}
+              userScore={score}
+              maxScore={maxScore}
+              userName="Md Himanshu Joseph"
+            />
           </div>
-          <Bar data={barData} options={barOptions} />
-        </motion.div>
+        </div>
 
         {/* Summary Table */}
         <motion.div

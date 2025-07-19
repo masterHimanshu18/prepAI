@@ -9,7 +9,12 @@ export const AnimatedScoreBar: React.FC<{
 }> = ({ score, maxScore, cutoffRatio = 0.6 }) => {
   const [animatedScore, setAnimatedScore] = useState(0);
   const controls = useAnimation();
-
+  // Axis
+    const divisions = 10;
+    const scalePoints = Array.from(
+      { length: divisions + 1 },
+      (_, i) => Math.round(maxScore * (i / divisions))
+    );
   // Values for rendering
   const cutoffScore = Math.round(maxScore * cutoffRatio);
 
@@ -20,7 +25,7 @@ export const AnimatedScoreBar: React.FC<{
     function animate(ts: number) {
       if (!start) start = ts;
       const elapsed = ts - start;
-      const duration = 1400; // ms
+      const duration = 4500; // ms
       const progress = Math.min(1, elapsed / duration);
       setAnimatedScore(Math.round(score * progress));
       if (progress < 1) {
@@ -52,7 +57,7 @@ return (
         left: `calc(${Math.min((animatedScore / maxScore) * 100, 100)}%)`,
         transform: "translateX(-50%)",
       }}
-      transition={{ type: "spring", stiffness: 108, damping: 9 }}
+      transition={{ type: "spring", stiffness: 108, damping: 7 }}
       animate={{
         left: `calc(${Math.min((animatedScore / maxScore) * 100, 100)}%)`,
         transform: "translateX(-50%)",
@@ -86,7 +91,7 @@ return (
       </motion.div>
 
       {/* 🌟 Bar End Indicator (Black line) */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-5 w-0.5 h-7 bg-black z-10"
         style={{
           left: `calc(${Math.min((animatedScore / maxScore) * 100, 100)}%)`,
@@ -94,8 +99,8 @@ return (
         }}
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 1.8 }}
-      />
+        transition={{ delay: 0.9, duration: 3.6 }}
+      /> */}
 
       {/* Cutoff marker */}
       <div
@@ -110,23 +115,21 @@ return (
       </div>
 
       {/* 🌟 Updated scale: every 10 marks */}
+      {/* Scale numbers */}
       <div className="relative z-10 flex justify-between items-center w-full text-xs font-medium mt-2 mb-1 select-none">
-        {Array.from({ length: Math.floor(maxScore / 10) + 1 }, (_, i) => {
-          const pt = i * 10;
-          return (
-            <span
-              key={pt}
-              className="text-gray-600"
-              style={
-                pt === cutoffScore
-                  ? { fontWeight: "bold", color: markerColor }
-                  : {}
-              }
-            >
-              {pt}
-            </span>
-          );
-        })}
+        {scalePoints.map((pt, i) => (
+          <span
+            key={i}
+            className="text-gray-600"
+            style={
+              pt === cutoffScore
+                ? { fontWeight: "bold", color: markerColor }
+                : {}
+            }
+          >
+            {pt}
+          </span>
+        ))}
       </div>
     </div>
   </div>
