@@ -374,7 +374,7 @@ const Confetti = () => (
   </svg>
 );
 
-export const AncientHistoryQuiz: React.FC = () => {
+export const PolityQuiz: React.FC = () => {
   const [selected, setSelected] = useState<Record<number, string>>({});
   const [status, setStatus] = useState<Record<number, boolean>>({});
   const [attempted, setAttempted] = useState<Record<number, boolean>>({});

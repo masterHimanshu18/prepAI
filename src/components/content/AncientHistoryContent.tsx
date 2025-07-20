@@ -2621,7 +2621,8 @@ export const AncientHistoryContent: React.FC = () => {
       <div className="p-6 bg-gradient-to-br from-indigo-50 to-red-50 rounded-xl border border-indigo-100 shadow-sm">
         <h3 className="font-bold text-2xl text-indigo-800 mb-4">Key Takeaways</h3>
         <div className="text-xl text-gray-600 mb-4">
-          <b>Note:</b> The following points are carefully summarized for quick SSC exam revision. For more detailed explanations, refer to <span className="font-semibold">Lucent</span> or recommended YouTube channels.
+        <b>Note:</b> Focus on factual information, dates, personalities, and cause-effect relationships as questions are usually direct and factual in nature.
+          The following points are carefully summarized for SSC exam. For more detailed explanations, refer to <span className="font-semibold">Lucent</span> or recommended YouTube channels.
         </div>
       </div>
 
