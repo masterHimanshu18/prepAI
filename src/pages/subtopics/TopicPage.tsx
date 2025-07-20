@@ -9,6 +9,7 @@ import { MedievalHistoryQuiz } from '../../components/quizzes/MedievalHistoryQui
 import { ModernHistoryQuiz } from '../../components/quizzes/ModernHistoryQuiz';
 import { ModernHistoryContent } from '../../components/content/ModernHistoryContent';
 import { PolityContent } from '../../components/content/PolityContent';
+import { PolityQuiz } from '../../components/quizzes/PolityQuiz';
 
 const TopicPage: React.FC = () => {
   const { chapter } = useParams<{ chapter: string }>();
